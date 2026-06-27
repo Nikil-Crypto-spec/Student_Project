@@ -172,11 +172,11 @@ plt.show()
 sns.scatterplot(
     data=df,
     x="Price",
-    y="Quantity",
+    y="Discount",
     hue="Product"
 )
 
-plt.title("price vs Quantity")
+plt.title("price vs Discount")
 plt.show()
 
 #Box Plot
@@ -205,7 +205,7 @@ plt.show()
 #Pie Chart
 product = df['Product'].value_counts()
 
-plt.figure(figsize=(7, 7))
+plt.figure(figsize=(7,7))
 plt.pie(
     product, 
     labels=product.index, 
